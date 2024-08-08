@@ -1,0 +1,75 @@
+/*==================================================
+=            Aonomy Testimonial Section           =
+==================================================*/
+
+#aonomy-testimonial {
+
+	position: relative;
+	background-image: url('https://via.placeholder.com/3000x2000.jpg');
+	background-size: cover;
+	color: $white;
+	text-align: center;
+	background-position: center center;
+    background-attachment: fixed;
+
+	&:before {
+		@include gradient(right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8) ); 
+	    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.aonomy-section-header {
+		padding-top: 6rem;
+		margin-top: 7.5rem;
+	}
+}
+
+.aonomy-testimonial-container {
+
+	padding-bottom: 6rem;
+
+	p {
+		margin: 0 auto 1.5rem;
+	}
+}
+.aonomy-testimonial-image {
+
+	img {
+		width: 7.75rem;
+		height: 7.75rem;
+		border-radius: 7.75rem;
+		margin-bottom: 3rem;
+	}
+}
+.aonomy-testimonial-author {
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+.aonomy-testimonial-icon {
+	i {
+		font-size: 3rem;
+	}
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 0;
+}
+.carousel-inner {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+@media (max-width: 768px) {
+
+	.aonomy-section-header {
+		padding-top: 6rem;
+		margin-top: 3rem;
+	}
+}
+
+

@@ -1,0 +1,62 @@
+/*==============================================
+=            Aonomy Contact Section            =
+==============================================*/
+
+.aonomy-contact-container {
+	
+	.form-group {
+
+		margin-bottom: 1.5rem;
+
+		input {
+			font-family: $body-font;
+			font-weight: 300;
+			color: $base_color;
+			border: 1px solid #e5e5e5;
+			height: 48px;
+			width: 100%;
+			padding-left: 1.5rem;
+		}
+
+		textarea {
+			font-family: $body-font;
+			font-weight: 300;
+			color: $base_color;
+			width: 100%;
+			border: 1px solid #e5e5e5;
+			height: 220px;
+			padding-left: 1.5rem;
+			padding-top: 1rem;
+		}
+
+		.with-errors {
+		    color: #dc3545;
+		    margin-top: 1.5rem;
+		}
+
+	}
+
+	.has-error input,
+	.has-danger input,
+	.has-error textarea,
+	.has-danger textarea {
+		outline: 1px solid #dc3545;
+	}
+
+	.btn {
+		@include gradient(right, rgba(53, 92, 125, 1), rgba(108, 91, 123, 1) );
+		font-family: $body-font;
+		font-weight: 300;
+		width: 200px;
+		height: 48px;
+		border-radius: 48px;
+		border: 0;
+		color: $white;
+		cursor: pointer;
+	}
+	
+	#msg {
+		margin-top: 1.5rem;
+	}
+}
+

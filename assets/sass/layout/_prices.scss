@@ -1,0 +1,80 @@
+/*=============================================
+=            Aonomy Prices Section            =
+=============================================*/
+
+.aonomy-app-price {
+	text-align: center;
+	@include box-shadow(0px, 0px, 6.4px, 1.6px, rgba(0, 0, 0, 0.08));
+	padding-top: 3rem;
+	position: relative;
+
+	h5 {
+		font-family: $body-font;
+		font-size: 1rem;
+		text-transform: uppercase;
+		margin-bottom: 3rem;
+		font-weight: 700;
+	}
+}
+
+.aonomy-prices {
+	font-size: 1rem;
+	margin: 3rem auto;
+
+	span {
+		font-weight: 700;
+		font-size: 1.75rem;
+	}
+}
+
+.aonomy-price-feature {
+	list-style: none;
+	padding-bottom: 3rem;
+
+	li {
+		font-family: $body-font;
+		font-weight: 300;
+		font-size: 1rem;
+		line-height: 2;
+	}
+}
+
+.aonomy-price-more {
+	position: absolute;
+	bottom: -1.5rem;
+	left: 0;
+	right: 0;
+	a {
+		@include gradient(right, rgba(53, 92, 125, 1), rgba(108, 91, 123, 1) );
+		height: 3rem;
+		width: 3rem;
+		border-radius: 3rem;
+		display: block;
+		margin: 1.5rem auto 0;
+		padding-top: 0.625rem;
+		color: $white;
+		text-decoration: none;
+		
+		&:hover {
+			@include gradient(right, rgba(53, 92, 125, 1), rgba(108, 91, 123, 1) );
+		}
+
+		i {
+			font-size: 1.75rem;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+ 	#aonomy-app-prices {
+		.aonomy-section-header {
+		    margin: 6rem auto 3rem;
+		}
+ 	}
+	.aonomy-app-price {
+		margin-bottom: 4.5rem;
+	}
+}
+
+
+

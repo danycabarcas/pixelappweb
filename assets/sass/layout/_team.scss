@@ -1,0 +1,86 @@
+/*===========================================
+=            Aonomy Team Section            =
+===========================================*/
+
+.aonomy-team-member {
+
+	@include box-shadow(0px, 0px, 6.4px, 1.6px, rgba(0, 0, 0, 0.08));
+	text-align: center;
+	overflow: hidden;
+
+	&:hover .aonomy-team-single-member .aonomy-team-member-details {
+		bottom: 0;
+	}
+}
+
+.aonomy-team-single-member {	
+	position: relative;
+}
+
+.aonomy-team-member-image {
+
+	img {
+		width: 100%;
+	}
+}
+
+.aonomy-team-member-details {
+
+	background: $white;
+	position : absolute;
+	width: 100%;
+	bottom: -4.125rem;
+	@include transition(all 1s);
+
+	h5 {
+		font-family: $body-font;
+		font-size: 1rem;
+		font-weight: 700;
+		margin-top: 1.5rem;
+		font-weight: 700;
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.aonomy-team-member-social {
+
+	ul {
+		list-style: none;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		border-top: 1px solid #e5e5e5;
+
+		li {
+			display: inline;
+			margin-left: .75rem;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			a {
+				color: $base_color;
+				text-decoration: none;
+
+				i {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+
+	#aonomy-team {
+		.aonomy-section-header {
+		    margin: 6rem auto 0;
+		}
+	}
+	.aonomy-team-member {
+		margin-top: 3rem;
+	}
+}

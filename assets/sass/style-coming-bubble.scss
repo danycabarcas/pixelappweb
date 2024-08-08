@@ -1,0 +1,30 @@
+/*
+Template Name : Aonomy - App Landing Page
+Version       : 1.2
+Author        : ThemeAves
+Author URI    : http://themeforest.net/user/ThemeAves
+Template File : coming-soon-bubble.html
+Description   : Aonomy is clean, modern and responsive App Landing HTML template. It is unique custom design based on bootstrap 4 and Sass. It has 7 diffeent background templates to help you choose the right template for your app and reusable components. Aonomy is premium looking template which can be easily customized for making any iPhone or Android apps landing page/showcase website. It is compatible on all major web browsers, tablets and phones.
+
+// ------------------------------------------ //
+//             TABLE OF CONTENTS              //
+// ------------------------------------------ // 
+
+01. Aonomy CSS Reset 
+02. Aonomy Default Style
+03. Aonomy Contact Section
+04. Aonomy Coming Soon Video Header
+05. Aonomy Footer Section
+*/
+
+// Utilities
+@import "utilities/settings";
+@import "utilities/reset";
+@import "utilities/default";
+
+// Header Section
+@import "base/header-coming-bubble";
+
+//layouts
+@import "layout/contact";
+@import "layout/footer";

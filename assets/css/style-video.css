@@ -1,0 +1,1537 @@
+/*
+Template Name : Aonomy - App Landing Page
+Version       : 1.2
+Author        : ThemeAves
+Author URI    : http://themeforest.net/user/ThemeAves
+Template File : index-video.html
+Description   : Aonomy is clean, modern and responsive App Landing HTML template. It is unique custom design based on bootstrap 4 and Sass. It has 7 diffeent background templates to help you choose the right template for your app and reusable components. Aonomy is premium looking template which can be easily customized for making any iPhone or Android apps landing page/showcase website. It is compatible on all major web browsers, tablets and phones.
+
+// ------------------------------------------ //
+//             TABLE OF CONTENTS              //
+// ------------------------------------------ // 
+
+01. Aonomy CSS Reset 
+02. Aonomy Default Style
+03. Aonomy Video Section Header
+04. Aonomy Works Section
+05. Aonomy Features Section
+06. Aonomy Download Section
+07. Aonomy Screen Section
+08. Aonomy Video Section 
+09. Aonomy Prices Section
+10. Aonomy Testimonial Section
+11. Aonomy Team Section
+12. Aonomy Statistics Section
+13. Aonomy News Section
+14. Aonomy Subscription Section
+15. Aonomy Contact Section
+16. Aonomy Footer Section
+*/
+/*========================================
+=            Aonomy CSS Reset            =
+========================================*/
+/* line 5, ../sass/utilities/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 26, ../sass/utilities/_reset.scss */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* line 31, ../sass/utilities/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 35, ../sass/utilities/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 40, ../sass/utilities/_reset.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 44, ../sass/utilities/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 48, ../sass/utilities/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 54, ../sass/utilities/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 61, ../sass/utilities/_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 66, ../sass/utilities/_reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 73, ../sass/utilities/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 77, ../sass/utilities/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 82, ../sass/utilities/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 87, ../sass/utilities/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 96, ../sass/utilities/_reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/*============================================
+=            Aonomy Default Style            =
+============================================*/
+/* line 4, ../sass/utilities/_default.scss */
+body {
+  color: #50514f;
+}
+
+/* line 7, ../sass/utilities/_default.scss */
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* line 12, ../sass/utilities/_default.scss */
+.aonomy-section-header {
+  text-align: center;
+  margin: 6rem auto;
+}
+/* line 16, ../sass/utilities/_default.scss */
+.aonomy-section-header h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+/* line 22, ../sass/utilities/_default.scss */
+.aonomy-section-header p {
+  max-width: 555px;
+  margin: 1.5rem auto 0;
+}
+
+/* line 28, ../sass/utilities/_default.scss */
+.aonomy-preloader {
+  background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b);
+  background: linear-gradient(to right, #355c7d, #6c5b7b);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+}
+
+/* line 37, ../sass/utilities/_default.scss */
+.sk-cube-grid {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 46, ../sass/utilities/_default.scss */
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background: #ffffff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+/* line 54, ../sass/utilities/_default.scss */
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+/* line 57, ../sass/utilities/_default.scss */
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+/* line 60, ../sass/utilities/_default.scss */
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+/* line 63, ../sass/utilities/_default.scss */
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+/* line 66, ../sass/utilities/_default.scss */
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+/* line 69, ../sass/utilities/_default.scss */
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+/* line 72, ../sass/utilities/_default.scss */
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+/* line 75, ../sass/utilities/_default.scss */
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+/* line 78, ../sass/utilities/_default.scss */
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+/* line 101, ../sass/utilities/_default.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 104, ../sass/utilities/_default.scss */
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* line 107, ../sass/utilities/_default.scss */
+#map {
+  height: 492px;
+}
+
+/*===================================================
+=            Aonomy Video Section Header            =
+===================================================*/
+/* line 5, ../sass/base/_header-video.scss */
+header {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+/* line 10, ../sass/base/_header-video.scss */
+header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  background: linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  width: 100%;
+  height: 100%;
+}
+
+/* line 23, ../sass/base/_header-video.scss */
+#aonomy-video-banner {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: -1px;
+  right: 0;
+  z-index: -1;
+}
+
+/* line 32, ../sass/base/_header-video.scss */
+.aonomy-logo-container {
+  margin: 1.5rem auto;
+  position: relative;
+  z-index: 1;
+}
+/* line 37, ../sass/base/_header-video.scss */
+.aonomy-logo-container img {
+  height: 29px;
+}
+
+/* line 42, ../sass/base/_header-video.scss */
+.aonomy-navigation {
+  position: relative;
+  z-index: 1;
+}
+/* line 47, ../sass/base/_header-video.scss */
+.aonomy-navigation ul {
+  margin: 1.5rem auto;
+  list-style: none;
+  float: right;
+  width: 100%;
+}
+/* line 53, ../sass/base/_header-video.scss */
+.aonomy-navigation ul li {
+  display: inline-block;
+  margin-left: 1.3125rem;
+}
+/* line 57, ../sass/base/_header-video.scss */
+.aonomy-navigation ul li:first-child {
+  margin-left: 0;
+}
+/* line 61, ../sass/base/_header-video.scss */
+.aonomy-navigation ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2;
+  color: #ffffff;
+}
+/* line 68, ../sass/base/_header-video.scss */
+.aonomy-navigation ul li a:hover {
+  text-decoration: none;
+}
+
+/* line 76, ../sass/base/_header-video.scss */
+.navbar {
+  padding: 0;
+  float: right;
+}
+
+/* line 81, ../sass/base/_header-video.scss */
+.navbar-toggler {
+  margin: 1.5rem auto;
+  color: #ffffff;
+  padding: 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0;
+  line-height: 2;
+}
+
+/* line 91, ../sass/base/_header-video.scss */
+.nav-link {
+  padding: 0;
+}
+
+/* line 95, ../sass/base/_header-video.scss */
+.aonomy-header-details {
+  text-align: center;
+  color: #ffffff;
+  margin: 12rem auto;
+}
+/* line 100, ../sass/base/_header-video.scss */
+.aonomy-header-details h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+/* line 110, ../sass/base/_header-video.scss */
+.aonomy-header-details p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 auto 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 121, ../sass/base/_header-video.scss */
+.aonmoy-header-buttons {
+  margin: 0 auto;
+  font-size: 0;
+  position: relative;
+  z-index: 2;
+}
+/* line 127, ../sass/base/_header-video.scss */
+.aonmoy-header-buttons a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  height: 48px;
+  width: 160px;
+  border-radius: 48px;
+  line-height: 3rem;
+  display: inline-block;
+}
+
+/* line 141, ../sass/base/_header-video.scss */
+.aonomy-header-learn-more {
+  background: #ffffff;
+  color: #50514f;
+}
+/* line 145, ../sass/base/_header-video.scss */
+.aonomy-header-learn-more:hover {
+  color: #50514f;
+}
+
+/* line 150, ../sass/base/_header-video.scss */
+.aonomy-header-download {
+  border: 1px solid #e5e5e5;
+  color: #ffffff;
+  margin-left: 1.5rem;
+}
+/* line 155, ../sass/base/_header-video.scss */
+.aonomy-header-download:hover {
+  color: #50514f;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* line 162, ../sass/base/_header-video.scss */
+.scroll-header {
+  position: fixed;
+  width: 100%;
+  background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b);
+  background: linear-gradient(to right, #355c7d, #6c5b7b);
+  -webkit-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  z-index: 99999;
+}
+
+@media (max-width: 575px) {
+  /* line 173, ../sass/base/_header-video.scss */
+  .aonmoy-header-buttons a {
+    width: 100%;
+  }
+
+  /* line 178, ../sass/base/_header-video.scss */
+  .aonomy-header-download {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 991px) {
+  /* line 186, ../sass/base/_header-video.scss */
+  .navbar {
+    float: right;
+  }
+
+  /* line 190, ../sass/base/_header-video.scss */
+  #navbarSupportedContent {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b);
+    background: linear-gradient(to right, #355c7d, #6c5b7b);
+  }
+
+  /* line 199, ../sass/base/_header-video.scss */
+  .aonomy-navigation {
+    z-index: 2;
+  }
+  /* line 203, ../sass/base/_header-video.scss */
+  .aonomy-navigation ul {
+    margin: 3rem auto;
+  }
+  /* line 206, ../sass/base/_header-video.scss */
+  .aonomy-navigation ul li {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+/*============================================
+=            Aonomy Works Section            =
+============================================*/
+/* line 5, ../sass/layout/_works.scss */
+.aonomy-works-box {
+  text-align: center;
+}
+/* line 9, ../sass/layout/_works.scss */
+.aonomy-works-box:nth-child(n+4) {
+  margin-top: 3rem;
+}
+/* line 13, ../sass/layout/_works.scss */
+.aonomy-works-box h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* line 23, ../sass/layout/_works.scss */
+.aonomy-works-icon {
+  margin: 0 auto;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 6rem;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+}
+/* line 30, ../sass/layout/_works.scss */
+.aonomy-works-icon:hover {
+  -webkit-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+}
+/* line 34, ../sass/layout/_works.scss */
+.aonomy-works-icon img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  /* line 44, ../sass/layout/_works.scss */
+  .aonomy-works-box:nth-child(n+3) {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  /* line 52, ../sass/layout/_works.scss */
+  .aonomy-works-box {
+    margin-top: 3rem;
+  }
+}
+/*==============================================
+=            Aonomy Features Section           =
+==============================================*/
+/* line 4, ../sass/layout/_features.scss */
+.aonomy-upper-feature-container {
+  position: relative;
+  background-image: url("https://via.placeholder.com/3000x2000.jpg");
+  background-size: cover;
+  padding-bottom: 6rem;
+  color: #ffffff;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* line 14, ../sass/layout/_features.scss */
+.aonomy-upper-feature-container:before {
+  background: -webkit-linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  background: linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 26, ../sass/layout/_features.scss */
+.aonomy-upper-feature-container .aonomy-section-header {
+  padding-top: 6rem;
+}
+
+/* line 30, ../sass/layout/_features.scss */
+.aonomy-single-feature {
+  margin-bottom: 4.5rem;
+}
+/* line 34, ../sass/layout/_features.scss */
+.aonomy-single-feature:nth-child(3n+3) {
+  margin-bottom: 0;
+}
+/* line 38, ../sass/layout/_features.scss */
+.aonomy-single-feature h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* line 46, ../sass/layout/_features.scss */
+.aonomy-feature-icon {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 6rem;
+  border: 1px solid #ffffff;
+  text-align: center;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/* line 55, ../sass/layout/_features.scss */
+.aonomy-feature-icon:hover {
+  background: #ffffff;
+}
+/* line 59, ../sass/layout/_features.scss */
+.aonomy-feature-icon:hover i {
+  background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b);
+  background: linear-gradient(to right, #355c7d, #6c5b7b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* line 63, ../sass/layout/_features.scss */
+.aonomy-feature-icon i {
+  font-size: 3rem;
+  line-height: 6rem;
+}
+
+/* line 69, ../sass/layout/_features.scss */
+.aonomy-left-features {
+  text-align: right;
+}
+/* line 72, ../sass/layout/_features.scss */
+.aonomy-left-features .aonomy-feature-icon {
+  float: right;
+  margin-left: 1.5rem;
+}
+
+/* line 78, ../sass/layout/_features.scss */
+.aonomy-feature-image img {
+  width: 100%;
+  max-width: 307px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 85, ../sass/layout/_features.scss */
+.aonomy-right-features {
+  text-align: left;
+}
+/* line 88, ../sass/layout/_features.scss */
+.aonomy-right-features .aonomy-feature-icon {
+  float: left;
+  margin-right: 1.5rem;
+}
+
+/* line 94, ../sass/layout/_features.scss */
+.aonomy-bottom-features {
+  margin-top: 6rem;
+}
+
+/* line 99, ../sass/layout/_features.scss */
+.aonomy-bottom-feature-image img {
+  width: 100%;
+  max-width: 330px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 108, ../sass/layout/_features.scss */
+.aonomy-bottom-feature-details h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 3rem;
+  font-weight: 900;
+}
+/* line 114, ../sass/layout/_features.scss */
+.aonomy-bottom-feature-details p {
+  margin-bottom: 1.5rem;
+}
+/* line 118, ../sass/layout/_features.scss */
+.aonomy-bottom-feature-details .aonomy-feature-download li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 3rem;
+}
+/* line 123, ../sass/layout/_features.scss */
+.aonomy-bottom-feature-details .aonomy-feature-download li:last-child {
+  margin-left: 1.5rem;
+}
+/* line 128, ../sass/layout/_features.scss */
+.aonomy-bottom-feature-details .aonomy-feature-download a {
+  width: 160px;
+  height: 48px;
+  display: block;
+  border-radius: 48px;
+  text-align: center;
+  line-height: 3rem;
+  text-decoration: none;
+  color: #ffffff;
+  background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b);
+  background: linear-gradient(to right, #355c7d, #6c5b7b);
+}
+/* line 139, ../sass/layout/_features.scss */
+.aonomy-bottom-feature-details .aonomy-feature-download a:hover {
+  background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b);
+  background: linear-gradient(to right, #355c7d, #6c5b7b);
+}
+/* line 143, ../sass/layout/_features.scss */
+.aonomy-bottom-feature-details .aonomy-feature-download a i {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 991px) {
+  /* line 153, ../sass/layout/_features.scss */
+  .aonomy-single-feature {
+    margin-bottom: 3rem;
+  }
+
+  /* line 156, ../sass/layout/_features.scss */
+  .aonomy-left-features {
+    text-align: center;
+  }
+  /* line 159, ../sass/layout/_features.scss */
+  .aonomy-left-features .aonomy-feature-icon {
+    float: none;
+    margin-left: 0;
+    margin: 0 auto 1.5rem;
+  }
+
+  /* line 166, ../sass/layout/_features.scss */
+  .aonomy-feature-image img {
+    margin: 3rem auto;
+  }
+
+  /* line 170, ../sass/layout/_features.scss */
+  .aonomy-right-features {
+    text-align: center;
+  }
+  /* line 173, ../sass/layout/_features.scss */
+  .aonomy-right-features .aonomy-feature-icon {
+    float: none;
+    margin-right: 0;
+    margin: 0 auto 1.5rem;
+  }
+
+  /* line 181, ../sass/layout/_features.scss */
+  .aonomy-bottom-feature-image img {
+    margin: 0 auto 3rem;
+  }
+
+  /* line 186, ../sass/layout/_features.scss */
+  .aonomy-bottom-feature-details {
+    text-align: center;
+  }
+  /* line 190, ../sass/layout/_features.scss */
+  .aonomy-bottom-feature-details .aonomy-feature-download li {
+    margin: 3rem auto 0;
+  }
+}
+@media (max-width: 575px) {
+  /* line 201, ../sass/layout/_features.scss */
+  .aonomy-bottom-feature-details .aonomy-feature-download li:last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+/*===============================================
+=            Aonomy Download Section            =
+===============================================*/
+/* line 5, ../sass/layout/_download.scss */
+#aonomy-download {
+  position: relative;
+  background-image: url("https://via.placeholder.com/3000x2000.jpg");
+  background-size: cover;
+  color: #ffffff;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* line 13, ../sass/layout/_download.scss */
+#aonomy-download:before {
+  background: -webkit-linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  background: linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 25, ../sass/layout/_download.scss */
+#aonomy-download .aonomy-section-header {
+  padding-top: 6rem;
+}
+
+/* line 30, ../sass/layout/_download.scss */
+.aonomy-download-section {
+  padding-bottom: 6rem;
+}
+/* line 33, ../sass/layout/_download.scss */
+.aonomy-download-section ul {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 38, ../sass/layout/_download.scss */
+.aonomy-download-section li {
+  list-style: none;
+  display: inline;
+  margin-left: 2.25rem;
+}
+/* line 43, ../sass/layout/_download.scss */
+.aonomy-download-section li:first-child {
+  margin-left: 0;
+}
+/* line 47, ../sass/layout/_download.scss */
+.aonomy-download-section li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 51, ../sass/layout/_download.scss */
+.aonomy-download-section li a i {
+  font-size: 3rem;
+}
+
+/*=============================================
+=            Aonomy Screen Section            =
+=============================================*/
+/*============================================
+=            Aonomy Video Section            =
+============================================*/
+/* line 5, ../sass/layout/_video.scss */
+#aonomy-video {
+  position: relative;
+  background-image: url("https://via.placeholder.com/3000x2000.jpg");
+  background-size: cover;
+  margin-top: 6rem;
+  color: #ffffff;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* line 14, ../sass/layout/_video.scss */
+#aonomy-video:before {
+  background: -webkit-linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  background: linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 26, ../sass/layout/_video.scss */
+#aonomy-video .aonomy-section-header {
+  padding-bottom: 6rem;
+}
+
+/* line 31, ../sass/layout/_video.scss */
+.aonomy-video-icon {
+  padding-top: 6rem;
+  text-align: center;
+}
+/* line 34, ../sass/layout/_video.scss */
+.aonomy-video-icon a {
+  color: #ffffff;
+  text-decoration: none;
+  z-index: 9999;
+}
+/* line 38, ../sass/layout/_video.scss */
+.aonomy-video-icon a i {
+  font-size: 4.5rem;
+}
+
+/* line 43, ../sass/layout/_video.scss */
+.lity-active .scroll-header {
+  z-index: 1;
+}
+
+/*=============================================
+=            Aonomy Prices Section            =
+=============================================*/
+/* line 5, ../sass/layout/_prices.scss */
+.aonomy-app-price {
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  padding-top: 3rem;
+  position: relative;
+}
+/* line 11, ../sass/layout/_prices.scss */
+.aonomy-app-price h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+/* line 20, ../sass/layout/_prices.scss */
+.aonomy-prices {
+  font-size: 1rem;
+  margin: 3rem auto;
+}
+/* line 24, ../sass/layout/_prices.scss */
+.aonomy-prices span {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+/* line 30, ../sass/layout/_prices.scss */
+.aonomy-price-feature {
+  list-style: none;
+  padding-bottom: 3rem;
+}
+/* line 34, ../sass/layout/_prices.scss */
+.aonomy-price-feature li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+/* line 42, ../sass/layout/_prices.scss */
+.aonomy-price-more {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  right: 0;
+}
+/* line 47, ../sass/layout/_prices.scss */
+.aonomy-price-more a {
+  background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b);
+  background: linear-gradient(to right, #355c7d, #6c5b7b);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+  display: block;
+  margin: 1.5rem auto 0;
+  padding-top: 0.625rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 58, ../sass/layout/_prices.scss */
+.aonomy-price-more a:hover {
+  background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b);
+  background: linear-gradient(to right, #355c7d, #6c5b7b);
+}
+/* line 62, ../sass/layout/_prices.scss */
+.aonomy-price-more a i {
+  font-size: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  /* line 70, ../sass/layout/_prices.scss */
+  #aonomy-app-prices .aonomy-section-header {
+    margin: 6rem auto 3rem;
+  }
+
+  /* line 74, ../sass/layout/_prices.scss */
+  .aonomy-app-price {
+    margin-bottom: 4.5rem;
+  }
+}
+/*==================================================
+=            Aonomy Testimonial Section           =
+==================================================*/
+/* line 5, ../sass/layout/_testimonial.scss */
+#aonomy-testimonial {
+  position: relative;
+  background-image: url("https://via.placeholder.com/3000x2000.jpg");
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* line 15, ../sass/layout/_testimonial.scss */
+#aonomy-testimonial:before {
+  background: -webkit-linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  background: linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 27, ../sass/layout/_testimonial.scss */
+#aonomy-testimonial .aonomy-section-header {
+  padding-top: 6rem;
+  margin-top: 7.5rem;
+}
+
+/* line 33, ../sass/layout/_testimonial.scss */
+.aonomy-testimonial-container {
+  padding-bottom: 6rem;
+}
+/* line 37, ../sass/layout/_testimonial.scss */
+.aonomy-testimonial-container p {
+  margin: 0 auto 1.5rem;
+}
+
+/* line 43, ../sass/layout/_testimonial.scss */
+.aonomy-testimonial-image img {
+  width: 7.75rem;
+  height: 7.75rem;
+  border-radius: 7.75rem;
+  margin-bottom: 3rem;
+}
+
+/* line 50, ../sass/layout/_testimonial.scss */
+.aonomy-testimonial-author {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/* line 55, ../sass/layout/_testimonial.scss */
+.aonomy-testimonial-icon i {
+  font-size: 3rem;
+}
+
+/* line 59, ../sass/layout/_testimonial.scss */
+.carousel-control-prev, .carousel-control-next {
+  width: 0;
+}
+
+/* line 62, ../sass/layout/_testimonial.scss */
+.carousel-inner {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  /* line 69, ../sass/layout/_testimonial.scss */
+  .aonomy-section-header {
+    padding-top: 6rem;
+    margin-top: 3rem;
+  }
+}
+/*===========================================
+=            Aonomy Team Section            =
+===========================================*/
+/* line 5, ../sass/layout/_team.scss */
+.aonomy-team-member {
+  -webkit-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  overflow: hidden;
+}
+/* line 11, ../sass/layout/_team.scss */
+.aonomy-team-member:hover .aonomy-team-single-member .aonomy-team-member-details {
+  bottom: 0;
+}
+
+/* line 16, ../sass/layout/_team.scss */
+.aonomy-team-single-member {
+  position: relative;
+}
+
+/* line 22, ../sass/layout/_team.scss */
+.aonomy-team-member-image img {
+  width: 100%;
+}
+
+/* line 27, ../sass/layout/_team.scss */
+.aonomy-team-member-details {
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  bottom: -4.125rem;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/* line 35, ../sass/layout/_team.scss */
+.aonomy-team-member-details h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+/* line 43, ../sass/layout/_team.scss */
+.aonomy-team-member-details p {
+  margin-bottom: 1.5rem;
+}
+
+/* line 50, ../sass/layout/_team.scss */
+.aonomy-team-member-social ul {
+  list-style: none;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid #e5e5e5;
+}
+/* line 56, ../sass/layout/_team.scss */
+.aonomy-team-member-social ul li {
+  display: inline;
+  margin-left: .75rem;
+}
+/* line 60, ../sass/layout/_team.scss */
+.aonomy-team-member-social ul li:first-child {
+  margin-left: 0;
+}
+/* line 64, ../sass/layout/_team.scss */
+.aonomy-team-member-social ul li a {
+  color: #50514f;
+  text-decoration: none;
+}
+/* line 68, ../sass/layout/_team.scss */
+.aonomy-team-member-social ul li a i {
+  font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+  /* line 79, ../sass/layout/_team.scss */
+  #aonomy-team .aonomy-section-header {
+    margin: 6rem auto 0;
+  }
+
+  /* line 83, ../sass/layout/_team.scss */
+  .aonomy-team-member {
+    margin-top: 3rem;
+  }
+}
+/*=================================================
+=            Aonomy Statistics Section            =
+=================================================*/
+/* line 5, ../sass/layout/_statistics.scss */
+#aonomy-statistics {
+  margin-top: 6rem;
+  text-align: center;
+  position: relative;
+  background-image: url("https://via.placeholder.com/3000x2000.jpg");
+  background-size: cover;
+  color: #ffffff;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* line 15, ../sass/layout/_statistics.scss */
+#aonomy-statistics:before {
+  background: -webkit-linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  background: linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 28, ../sass/layout/_statistics.scss */
+.aonomy-single-statistics {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+/* line 32, ../sass/layout/_statistics.scss */
+.aonomy-single-statistics i {
+  font-size: 4.5rem;
+}
+
+/* line 37, ../sass/layout/_statistics.scss */
+.aonomy-statistics-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+/* line 43, ../sass/layout/_statistics.scss */
+.aonomy-statistics-number {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  /* line 51, ../sass/layout/_statistics.scss */
+  .aonomy-single-statistics {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+
+  /* line 55, ../sass/layout/_statistics.scss */
+  .aonomy-single-statistics:first-child {
+    padding-top: 6rem;
+  }
+
+  /* line 58, ../sass/layout/_statistics.scss */
+  .aonomy-single-statistics:last-child {
+    padding-bottom: 6rem;
+  }
+}
+/*===========================================
+=            Aonomy News Section            =
+===========================================*/
+/* line 5, ../sass/layout/_news.scss */
+.aonomy-single-news {
+  -webkit-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+}
+
+/* line 9, ../sass/layout/_news.scss */
+.aonomy-news-details {
+  padding: 1.5rem;
+}
+/* line 12, ../sass/layout/_news.scss */
+.aonomy-news-details h5 {
+  font-family: "Montserrat", sans-serif;
+}
+/* line 15, ../sass/layout/_news.scss */
+.aonomy-news-details h5 a {
+  text-decoration: none;
+  color: #50514f;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+/* line 23, ../sass/layout/_news.scss */
+.aonomy-news-details p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* line 31, ../sass/layout/_news.scss */
+.aonomy-news-thumbnail img {
+  width: 100%;
+}
+
+/* line 36, ../sass/layout/_news.scss */
+.aonomy-news-read-more {
+  font-family: "Roboto", sans-serif;
+  color: #50514f;
+  text-decoration: none;
+}
+/* line 41, ../sass/layout/_news.scss */
+.aonomy-news-read-more:hover {
+  color: #50514f;
+  text-decoration: none;
+}
+
+/* line 47, ../sass/layout/_news.scss */
+.aonomy-news-meta {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e5e5;
+}
+/* line 52, ../sass/layout/_news.scss */
+.aonomy-news-meta a {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  color: #50514f;
+  text-decoration: none;
+  margin-right: .75rem;
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  /* line 64, ../sass/layout/_news.scss */
+  #aonomy-news .aonomy-section-header {
+    margin: 6rem auto 0;
+  }
+
+  /* line 68, ../sass/layout/_news.scss */
+  .aonomy-single-news {
+    margin-top: 3rem;
+  }
+}
+/*===================================================
+=            Aonomy Subscription Section            =
+===================================================*/
+/* line 5, ../sass/layout/_subscription.scss */
+#aonomy-subscription {
+  padding-bottom: 6rem;
+  text-align: center;
+  position: relative;
+  background-image: url("https://via.placeholder.com/3000x2000.jpg");
+  background-size: cover;
+  color: #ffffff;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* line 15, ../sass/layout/_subscription.scss */
+#aonomy-subscription:before {
+  background: -webkit-linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  background: linear-gradient(to right, rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8));
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 27, ../sass/layout/_subscription.scss */
+#aonomy-subscription .aonomy-section-header {
+  padding-top: 6rem;
+}
+/* line 31, ../sass/layout/_subscription.scss */
+#aonomy-subscription #message {
+  margin-top: 1.5rem;
+}
+
+/* line 35, ../sass/layout/_subscription.scss */
+.aonomy-subscription-form {
+  margin: 0 auto;
+  position: relative;
+}
+/* line 39, ../sass/layout/_subscription.scss */
+.aonomy-subscription-form input {
+  border: 0;
+}
+/* line 43, ../sass/layout/_subscription.scss */
+.aonomy-subscription-form input[type="text"] {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 48px;
+  border-radius: 48px;
+  text-align: center;
+}
+/* line 52, ../sass/layout/_subscription.scss */
+.aonomy-subscription-form input[type="submit"] {
+  background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b);
+  background: linear-gradient(to right, #355c7d, #6c5b7b);
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  border-radius: 48px;
+  color: #ffffff;
+  right: 4px;
+  top: 4px;
+}
+
+/*==============================================
+=            Aonomy Contact Section            =
+==============================================*/
+/* line 7, ../sass/layout/_contact.scss */
+.aonomy-contact-container .form-group {
+  margin-bottom: 1.5rem;
+}
+/* line 11, ../sass/layout/_contact.scss */
+.aonomy-contact-container .form-group input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #50514f;
+  border: 1px solid #e5e5e5;
+  height: 48px;
+  width: 100%;
+  padding-left: 1.5rem;
+}
+/* line 21, ../sass/layout/_contact.scss */
+.aonomy-contact-container .form-group textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #50514f;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  height: 220px;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+/* line 32, ../sass/layout/_contact.scss */
+.aonomy-contact-container .form-group .with-errors {
+  color: #dc3545;
+  margin-top: 1.5rem;
+}
+/* line 39, ../sass/layout/_contact.scss */
+.aonomy-contact-container .has-error input,
+.aonomy-contact-container .has-danger input,
+.aonomy-contact-container .has-error textarea,
+.aonomy-contact-container .has-danger textarea {
+  outline: 1px solid #dc3545;
+}
+/* line 46, ../sass/layout/_contact.scss */
+.aonomy-contact-container .btn {
+  background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b);
+  background: linear-gradient(to right, #355c7d, #6c5b7b);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width: 200px;
+  height: 48px;
+  border-radius: 48px;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* line 58, ../sass/layout/_contact.scss */
+.aonomy-contact-container #msg {
+  margin-top: 1.5rem;
+}
+
+/*=============================================
+=            Aonomy Footer Section            =
+=============================================*/
+/* line 5, ../sass/layout/_footer.scss */
+#aonomy-footer {
+  margin-top: 6rem;
+}
+
+/* line 9, ../sass/layout/_footer.scss */
+.aonomy-footer-contact {
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 6.4px 1.6px rgba(0, 0, 0, 0.08);
+  padding: 48px;
+  bottom: 96px;
+  margin-right: 15px;
+}
+/* line 17, ../sass/layout/_footer.scss */
+.aonomy-footer-contact h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 2.25rem;
+  line-height: 1;
+}
+/* line 23, ../sass/layout/_footer.scss */
+.aonomy-footer-contact p {
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+/* line 27, ../sass/layout/_footer.scss */
+.aonomy-footer-contact p:last-child {
+  margin-bottom: 0;
+}
+/* line 31, ../sass/layout/_footer.scss */
+.aonomy-footer-contact p i {
+  background: -webkit-linear-gradient(to right, #355C7D, #6C5B7B);
+  background: linear-gradient(to right, #355C7D, #6C5B7B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+}
+/* line 35, ../sass/layout/_footer.scss */
+.aonomy-footer-contact p a {
+  color: #50514f;
+  text-decoration: none;
+}
+
+/* line 42, ../sass/layout/_footer.scss */
+.aonomy-copyright-container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: #50514f;
+  color: #ffffff;
+}
+
+/* line 50, ../sass/layout/_footer.scss */
+.aonomy-copyright {
+  float: left;
+}
+/* line 53, ../sass/layout/_footer.scss */
+.aonomy-copyright p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+/* line 57, ../sass/layout/_footer.scss */
+.aonomy-copyright p i {
+  color: #e74c3c;
+}
+
+/* line 63, ../sass/layout/_footer.scss */
+.aonomy-social {
+  float: right;
+}
+/* line 69, ../sass/layout/_footer.scss */
+.aonomy-social ul li {
+  display: inline;
+  margin-right: 1rem;
+  line-height: 1;
+}
+/* line 74, ../sass/layout/_footer.scss */
+.aonomy-social ul li:last-child {
+  margin-right: 0;
+}
+/* line 78, ../sass/layout/_footer.scss */
+.aonomy-social ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  /* line 88, ../sass/layout/_footer.scss */
+  .aonomy-copyright-container {
+    text-align: center;
+  }
+
+  /* line 91, ../sass/layout/_footer.scss */
+  .aonomy-copyright {
+    float: none;
+  }
+
+  /* line 95, ../sass/layout/_footer.scss */
+  .aonomy-social {
+    float: none;
+    margin-top: 1.5rem;
+  }
+}

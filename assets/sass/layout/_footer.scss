@@ -1,0 +1,101 @@
+/*=============================================
+=            Aonomy Footer Section            =
+=============================================*/
+
+#aonomy-footer {
+	margin-top: 6rem;
+}
+
+.aonomy-footer-contact {
+	position: absolute;
+	background: $white;
+	@include box-shadow(0px, 0px, 6.4px, 1.6px, rgba(0, 0, 0, 0.08));
+	padding: 48px;
+	bottom: 96px;
+	margin-right: 15px;
+
+	h3 {
+		font-family: $heading-font;		
+		font-size: 2.25rem;
+		margin-bottom: 2.25rem;
+		line-height: 1;
+	}
+	p {
+		line-height: 1;
+		margin-bottom: 1.5rem;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		i {
+			@include gradient_color( right, #355C7D, #6C5B7B );
+			font-size: 1.5rem;
+		}
+		a {
+			color: $base_color;
+			text-decoration: none;
+		}
+	}
+}
+
+.aonomy-copyright-container {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	background: $base_color;
+	color: $white;
+	
+}
+
+.aonomy-copyright {
+	float: left;
+
+	p {
+		font-weight: 300;
+		font-size: 1rem;
+
+		i {
+			color: $red;
+		}
+	}
+}
+
+.aonomy-social {
+
+	float: right;
+
+	ul {
+
+		li {
+
+			display: inline;
+			margin-right: 1rem;
+			line-height: 1;
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	
+	.aonomy-copyright-container {
+		text-align: center;
+	}
+	.aonomy-copyright {
+		float: none;
+	}
+
+	.aonomy-social {
+		float: none;
+		margin-top: 1.5rem;
+	}
+}
+
+

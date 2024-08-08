@@ -1,0 +1,75 @@
+/*===========================================
+=            Aonomy News Section            =
+===========================================*/
+
+#aonomy-news {
+	margin-top: 3rem;
+}
+
+.aonomy-single-news {
+	@include box-shadow(0px, 0px, 6.4px, 1.6px, rgba(0, 0, 0, 0.08));
+	margin-top: 3rem;
+}
+.aonomy-news-details {
+	padding: 1.5rem;
+
+	h5 {
+		font-family: $heading-font;
+
+		a{
+			text-decoration: none;
+			color: $base_color;
+			font-size: 1.125rem;
+			font-weight: 700;
+		}
+	}
+
+	p {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+}
+
+.aonomy-news-thumbnail {
+	img {
+		width: 100%;
+	}
+}
+
+.aonomy-news-read-more {
+	font-family: $body-font;
+	color: $base_color;
+	text-decoration: none;
+
+	&:hover {
+		color: $base_color;
+		text-decoration: none;	
+	}
+}
+
+.aonomy-news-meta {
+	margin-top: 1.5rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid #e5e5e5;
+
+	a {
+		font-family: $body-font;
+		font-size: 0.875rem;
+		color: $base_color;
+		text-decoration: none;
+		margin-right: .75rem;
+		font-weight: 300;
+	}
+}
+
+@media (max-width: 991px) {
+	#aonomy-news {
+		.aonomy-section-header {
+		    margin: 6rem auto 0;
+		}
+	}
+	.aonomy-single-news {
+		margin-top: 3rem;
+	}
+}

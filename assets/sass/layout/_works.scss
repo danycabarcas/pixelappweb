@@ -1,0 +1,55 @@
+/*============================================
+=            Aonomy Works Section            =
+============================================*/
+
+.aonomy-works-box {
+
+	text-align: center;
+
+	&:nth-child(n+4){
+		margin-top: 3rem;
+	}
+	
+	h5 {
+		font-family: $heading-font;
+		font-weight: 700;
+		font-size: 1.125rem;
+		margin-top: 3rem;
+		margin-bottom: 1.5rem;
+	}
+
+}
+
+.aonomy-works-icon {
+	margin: 0 auto;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 6rem;
+	@include box-shadow(0px, 4px, 8px, 0px, rgba(0, 0, 0, 0.08));
+
+	&:hover {
+		@include box-shadow(0px, 0px, 6.4px, 1.6px, rgba(0, 0, 0, 0.08));
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+		padding-top: 1.5rem;
+	}
+}
+
+@media (max-width: 991px) {
+	.aonomy-works-box {
+
+		&:nth-child(n+3){
+			margin-top: 3rem;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+
+	.aonomy-works-box {
+		margin-top: 3rem;
+	}
+}

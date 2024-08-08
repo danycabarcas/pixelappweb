@@ -1,0 +1,51 @@
+/*
+Template Name : Aonomy - App Landing Page
+Version       : 1.2
+Author        : ThemeAves
+Author URI    : http://themeforest.net/user/ThemeAves
+Template File : index-particles.html
+Description   : Aonomy is clean, modern and responsive App Landing HTML template. It is unique custom design based on bootstrap 4 and Sass. It has 7 diffeent background templates to help you choose the right template for your app and reusable components. Aonomy is premium looking template which can be easily customized for making any iPhone or Android apps landing page/showcase website. It is compatible on all major web browsers, tablets and phones.
+
+// ------------------------------------------ //
+//             TABLE OF CONTENTS              //
+// ------------------------------------------ //
+
+01. Aonomy CSS Reset 
+02. Aonomy Default Style
+03. Aonomy Particles Section Header
+04. Aonomy Works Section
+05. Aonomy Features Section
+06. Aonomy Download Section
+07. Aonomy Screen Section
+08. Aonomy Video Section 
+09. Aonomy Prices Section
+10. Aonomy Testimonial Section
+11. Aonomy Team Section
+12. Aonomy Statistics Section
+13. Aonomy News Section
+14. Aonomy Subscription Section
+15. Aonomy Contact Section
+16. Aonomy Footer Section
+*/
+
+// Utilities
+@import "utilities/settings";
+@import "utilities/reset";
+@import "utilities/default";
+
+// Header Section
+@import "base/header-particles";
+@import "layout/works";
+@import "layout/features";
+@import "layout/download";
+@import "layout/screen";
+@import "layout/video";
+@import "layout/prices";
+@import "layout/testimonial";
+@import "layout/team";
+@import "layout/statistics";
+@import "layout/news";
+@import "layout/subscription";
+@import "layout/contact";
+@import "layout/footer";
+

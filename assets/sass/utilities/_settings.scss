@@ -1,0 +1,38 @@
+// font family
+$heading-font  : 'Montserrat', sans-serif;
+$body-font : 'Roboto', sans-serif;
+
+// box shadow 
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+	-webkit-box-shadow:$top $left $blur $color #{$inset};
+	-moz-box-shadow:$top $left $blur $color #{$inset};
+	box-shadow:$top $left $blur $color #{$inset};
+}
+
+//gradient background
+@mixin gradient($position, $color1, $color2){
+	background: -webkit-linear-gradient(to $position, $color1, $color2);
+	background: linear-gradient(to $position, $color1, $color2);
+}
+
+//gradient color
+@mixin gradient_color($position, $color1, $color2){
+	background: -webkit-linear-gradient(to $position, $color1, $color2);
+	background: linear-gradient(to $position, $color1, $color2);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+// transition 
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+// colors
+$white: #ffffff;
+$base-color: #50514f;
+$link-color: #355C7D;
+$red: #e74c3c;
